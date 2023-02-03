@@ -1,0 +1,732 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*Estilo Geral*/
+
+body {
+  font-family: "Poppins";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  padding: 1rem 8rem;
+}
+
+header {
+  height: 12vh;
+  background-color: #e8ba4d;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+header .container nav {
+  height: 100%;
+}
+
+header .container nav ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  height: 50%;
+}
+
+header .container nav ul li a {
+  color: black;
+  transition: all 800ms ease-in-out;
+}
+
+header .container nav ul li a:hover {
+  color: #00949c;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer .container .botton {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #f6c34a;
+}
+
+footer .container .botton h2 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+footer .container .botton .endereco {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer .container .botton .links .linkMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer .container .botton .links .linkMenu a {
+  color: black;
+  transition: all 800ms ease-in-out;
+}
+
+footer .container .botton .links .linkMenu a:hover {
+  color: #00949c;
+}
+
+footer .container .botton .redeS ul {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .container #logo {
+  width: 12%;
+}
+
+/*Index.HTML*/
+
+#home .primeiraSection {
+  background: url("./Galeria/background-hero.png"),
+    #f6c34a no-repeat center center;
+  background-size: cover;
+  height: 80vh;
+}
+
+#home .primeiraSection .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#home .primeiraSection .container .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+#home .primeiraSection .container .top p {
+  font-size: 1.2rem;
+  font-weight: 450;
+}
+
+#home .primeiraSection .container button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  transition: all 800ms ease-in-out;
+}
+
+#home .primeiraSection .container button a {
+  color: white;
+}
+
+#home .primeiraSection .container button:hover {
+  transform: scale(1.5);
+}
+
+.whats a img {
+  position: fixed;
+  right: 3%;
+  top: 70vh;
+  width: 3%;
+  transition: all 800ms ease-in-out;
+  cursor: pointer;
+}
+
+.whats a img:hover {
+  transform: scale(1.5);
+}
+
+/* Segunda Section: */
+
+#home .segundaSection {
+  background-color: #0e0e0e;
+  height: 50vh;
+}
+
+#home .segundaSection .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100%;
+}
+
+#home .segundaSection h2 {
+  font-weight: 700;
+}
+
+#home .segundaSection p {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Terceira Section: */
+
+#home .terceiraSection {
+  background-color: #0e0e0e;
+  height: 100vh;
+}
+
+#home .terceiraSection .container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100%;
+}
+
+#home .terceiraSection h2 {
+  font-weight: 700;
+}
+
+#home .terceiraSection .relatos {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+#home .terceiraSection .relatos .card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#home .terceiraSection .relatos .card figure {
+  width: 100%;
+  text-align: center;
+}
+
+#home .terceiraSection .relatos .card figure img {
+  width: 40%;
+}
+
+/* Tela cursos : */
+
+#curso .primeiraSection {
+  background-color: #f6c34a;
+}
+
+#curso .primeiraSection .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+#curso .primeiraSection .container article {
+  display: flex;
+  justify-content: space-around;
+}
+
+#curso .primeiraSection .container article .cursosCard {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background: white;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  align-items: center;
+  width: 20%;
+}
+
+#curso .primeiraSection .container button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  transition: all 800ms ease-in-out;
+}
+
+#curso .primeiraSection .container button a {
+  color: white;
+}
+
+#curso .primeiraSection .container button:hover {
+  transform: scale(1.5);
+}
+
+/* Segunda section ( Cursos ) */
+
+#curso .segundaSection {
+  background-color: black;
+  color: white;
+}
+
+#curso .segundaSection .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+#curso .segundaSection .container .galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#curso .segundaSection .container .galeria .card {
+  background-color: white;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  color: black;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+#curso .segundaSection .container .galeria .card h4 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+#curso .segundaSection .container .galeria .card h2 {
+  margin-right: 4rem;
+  font-weight: bold;
+}
+
+/* Tela de contato: */
+
+#contato {
+  background-color: black;
+}
+
+#contato .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+#contato .container form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 5px;
+  padding: 2rem 4rem;
+}
+
+#contato .container form button {
+  background-color: #f6c34a;
+  padding: 1rem 0;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#contato .container form input,
+#contato .container form textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.3rem 0.2rem;
+}
+
+#contato .container form label {
+  font-weight: bold;
+  margin-bottom: -1rem;
+}
+
+#contato .whats a img {
+  top: 90vh;
+}
+
+/* Tela area ADM: TURMAS*/
+
+.active {
+  color: white !important;
+}
+
+#ADM {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+}
+
+#ADM nav {
+  background-color: #0e0e0e;
+  font-weight: 700;
+  font-size: 20px;
+  width: 20vw;
+}
+
+#ADM nav .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #707070;
+  width: 100%;
+  padding: 1rem 3rem;
+}
+
+#adm nav .container li {
+  width: 100%;
+  text-align: left;
+}
+
+#ADM nav .container li button {
+  color: #707070;
+  background-color: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#ADM section {
+  width: 100%;
+  background-color: #f6c34a;
+  border-bottom: 1px solid black;
+}
+
+#ADM #matricula,
+#ADM #financeiroalunos {
+  display: none;
+}
+
+#ADM section #turmas .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+#ADM section #turmas .container .busca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ADM section #turmas .container .busca input {
+  border-radius: 5px 0 0 5px;
+  padding: 0.5rem 0.2rem;
+}
+
+#ADM section #turmas .container .busca button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#ADM section #turmas .container .galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+
+}
+
+#ADM section #turmas .container .galeria .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+}
+
+#ADM section #turmas .container .galeria .card .title {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#ADM section #turmas .container .galeria .card .body {
+  font-family: 'Open Sans';
+}
+
+#ADM section #turmas .container .galeria .card .body p {
+  text-align: left;
+}
+
+#ADM section #turmas .container .galeria .card .body p span {
+  font-weight: bold;
+}
+
+/* Tela area ADM: MATRICULA*/
+
+#matricula .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#matricula .container .esquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30%;
+}
+
+#matricula .container .esquerda form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#matricula .container .esquerda form label {
+  font-weight: bold;
+  margin-bottom: -1rem;
+}
+
+#matricula .container .esquerda form input {
+  border-radius: 5px;
+  padding: 0.5rem 0.2rem;
+}
+
+#matricula .container .esquerda form button {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem 0;
+}
+
+#matricula .container .direita {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+}
+
+#matricula .container .direita .top {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#matricula .container .direita .top h3 {
+  font-weight: bold;
+}
+
+#matricula .container .direita .top img {
+  width: 10%;
+}
+
+#matricula .container .direita #msgMatriculaBody p {
+  text-transform: capitalize;
+}
+
+/* Financeiro Aluno  */
+
+#financeiroalunos .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#financeiroalunos .container .esquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+#financeiroalunos .container .esquerda label {
+  margin-bottom: -1rem;
+  font-weight: bold;
+}
+
+#financeiroalunos .container .esquerda input {
+  border-radius: 5px;
+  padding: 0.5rem 0.2rem;
+  width: 50%;
+}
+
+#financeiroalunos .container .esquerda button {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  width: 50%;
+}
+
+#financeiroalunos .container .direita {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+#financeiroalunos .container .direita label {
+  margin-bottom: -1rem;
+  font-weight: bold;
+}
+
+#financeiroalunos .container .direita input {
+  border-radius: 5px;
+  padding: 0.5rem 0.2rem;
+  width: 50%;
+}
+
+#financeiroalunos .container .direita button {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  width: 50%;
+}
+
+#financeiroalunos #lista_cursos {
+  position: absolute;
+  width: 40vw;
+  background-color: #0E0E0E;
+  border-radius: 10px;
+  left: 43%;
+  top: 15%;
+  transition: var(--transition);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 4rem;
+}
+
+#financeiroalunos #lista_cursos .close {
+  font-size: 1.5rem;
+  padding-right: .5rem;
+  padding-top: .5rem;
+  text-align: right;
+}
+
+#financeiroalunos #lista_cursos .close img {
+  cursor: pointer;
+  width: 6%;
+  filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(136deg) brightness(103%) contrast(103%);
+}
+
+
+#financeiroalunos #lista_cursos .title {
+  margin-bottom: 1rem;
+  color: #F6C34A;
+}
+
+#financeiroalunos #lista_cursos #lista_cursos_body {
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+#financeiroalunos #lista_cursos #lista_cursos_body .top {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#financeiroalunos #lista_cursos #lista_cursos_body .top p {
+  width: 40%;
+  text-align: left;
+}
+
+#financeiroalunos #lista_cursos #lista_cursos_body .body {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: 300;
+}
+
+#financeiroalunos #lista_cursos #lista_cursos_body .body p {
+  width: 40%;
+  text-align: left;
+}
+
+#financeiroalunos #lista_cursos #lista_cursos_body .body button {
+  background-color: rgb(216, 166, 3);
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: .2rem 1rem;
+  border-radius: 5px;
+  transition: var(--transition);
+  font-size: 1.1rem;
+  color: white;
+}
+
+#financeiroalunos #lista_cursos #lista_cursos_body .body button:hover {
+  background-color: transparent;
+  border-color: lightgreen;
+}
+
+#financeiroalunos .container .esquerda #buscarCurso {
+  background-color: white;
+  border-radius: 5px;
+  width: 52%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+#financeiroalunos .container .esquerda #buscarCurso .show_curso {
+  padding: 0 .3rem;
+  border-radius: 5px;
+  border: 1px dashed black;
+  font-size: .7rem;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+#financeiroalunos .container .esquerda #buscarCurso .show_curso p {
+  font-weight: 400;
+}
+
+#financeiroalunos .container .esquerda #buscarCurso .show_curso img {
+  cursor: pointer;
+}
